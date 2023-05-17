@@ -8,9 +8,10 @@
         <script>
           const url = new URL(window.location.href);
           const target = url.searchParams.get("target");
-          if (!target) return;
-          const adUrl = decodeURIComponent(target);
-          open(adUrl);
+          if (!!target) {
+              const adUrl = decodeURIComponent(target);
+              open(adUrl);
+          }
         </script>  
       <title>Retarg</title>
     </head>
