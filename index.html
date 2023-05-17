@@ -1,1 +1,20 @@
-Hello
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+          const url = new URL(window.location.href);
+          const target = url.searchParams.get("target");
+          if (!target) return;
+          const adUrl = decodeURIComponent(target);
+          open(adUrl);
+        </script>  
+      <title>Retarg</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
